@@ -1,0 +1,8 @@
+{
+    "name": "s3_upload",
+    "private": true,
+    "dependencies": {
+        "angular": "~1.2.22",
+        "bootstrap": "~3.1.1"
+    }
+}
