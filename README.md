@@ -33,4 +33,5 @@ There's a small page on the index that can be used to test the server endpoints
 ## Server Endpoints
 
 `POST: /api/images/` - Posts the submitted images to the specifed S3 bucket
+
 `GET: /api/images/[image_id]` - Retrieves the specified image from S3 and serves the image
