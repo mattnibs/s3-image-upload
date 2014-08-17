@@ -11,7 +11,7 @@ class ImageCreate(APIView):
     parser_classes = (MultiPartParser, FormParser)
 
     def post(self, request, format=None):
-        success, imageName = ImageManager.uploadImage(request.FILES['file'])
+        success, imageName = ImageManager.uploadImage(request.FILES.itervalues().next())
         return Response({
             'success': success,
             'image_name': imageName
